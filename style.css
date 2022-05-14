@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: clouds;
-  src: url("fonts/MCKLW___.ttf");
+  src: url("fonts/MCKLSH__.ttf");
 }
 
 @font-face {
@@ -104,12 +104,6 @@ a {
   cursor: pointer;
   user-select: none;
   transform: translateY(100%)
-}
-.site-container:hover {
-  /* top: -1px; */
-}
-.site-container:hover {
-  /* top: 1px; */
 }
 
 .agave {
