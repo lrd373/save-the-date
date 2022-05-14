@@ -1,0 +1,282 @@
+@font-face {
+  font-family: western;
+  src: url("fonts/Smokum-Regular.ttf");
+}
+
+@font-face {
+  font-family: clouds;
+  src: url("fonts/MCKLW___.ttf");
+}
+
+@font-face {
+  font-family: westernHeader;
+  src: url("fonts/gomarice_nandaka_western.ttf")
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideup {
+  0% {
+    transform: translateY(100%);
+  }
+  80% {
+    transform: translateY(25%);
+  }
+  100% {
+    transform: translateY(27%);
+  }
+}
+
+body, html {
+  background-color: rgb(180, 71, 71);
+  font-family: Martel, sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.bg {
+  background-image: url("images/arizona_painting_selfie.JPG");
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.names {
+  color: white;
+  font-size: 4rem;
+  /* padding: 18vh 50vw 0 13vw; */
+  margin: 0;
+  text-align: center;
+}
+.lauren, .and {
+  text-shadow: 1px 1px rgb(247, 161, 3);
+}
+.lauren{
+  font-family: clouds, Martel, serif;
+}
+.and {
+  font-size: 3rem;
+}
+
+.james {
+  color:rgb(247, 161, 3);
+  font-family: westernHeader, Martel, serif;
+}
+
+.sun {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: 12vw;
+}
+
+.site-flex {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.site-container {
+  animation: slideup 1s ease-in-out 2s forwards;
+  margin: 12px 0 0;
+  padding: 3px 10px 0;
+  position: absolute;
+  bottom:0;
+  left: 5px;
+  cursor: pointer;
+  user-select: none;
+  transform: translateY(100%)
+}
+.site-container:hover {
+  /* top: -1px; */
+}
+.site-container:hover {
+  /* top: 1px; */
+}
+
+.agave {
+  position: relative;
+  width: 300px;
+  height: auto;
+  z-index: 1;
+}
+
+.site-txt {
+  justify-content: flex-start;
+  font-family: Martel, serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+  bottom: 165px;
+  z-index: 2;
+  text-align: center;
+}
+
+.text-container {
+  padding: 6vh 55vw 0 13vw;
+  text-align: center;
+}
+
+.text-container * {
+  color:white;
+  margin: 0.25rem 0;
+  text-shadow: 1px 1px lightcoral;
+}
+
+.getting-married {
+  font-size: 1.65rem;
+}
+
+.abbey {
+  font-size: 1.75rem;
+}
+
+.date * {
+  color: rgb(247, 161, 3);
+  font-family: western, Martel;
+  font-size: 4rem;
+  letter-spacing: 0.25rem;
+  text-shadow: 1px 1px white;
+}
+
+.on, .at {
+  font-size: 1.35rem;
+}
+
+@media (min-width: 1640px) {
+  .names {
+    position: fixed;
+    top: 50px;
+    left: 300px;
+  }
+  .text-container {
+    padding: 25vh 55vw 0 16vw;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1640px) {
+  .names {
+    padding: 12vh 30vw 0 0;
+  }
+  .text-container {
+    padding: 3vh 50vw 0 16vw;
+  }
+}
+
+@media (min-width: 1250px) and (max-width: 1400px) {
+  .names {
+    padding: 15vh 30vw 0 0;
+  }
+  .lauren {
+    font-size: 4.5rem;
+  }
+  .james {
+    font-size: 4rem;
+  }
+  .text-container {
+    padding: 3vh 50vw 0 14vw;
+  }
+}
+
+@media (min-width: 1159px) and (max-width: 1250px) {
+  .names {
+    padding: 13vw 30vw 0 0;
+  }
+  .lauren, .and {
+    text-shadow: 1px 1px rgb(247, 161, 3);
+  }
+  .text-container {
+    padding: 3vh 50vw 0 14vw;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 1159px) {
+  .sun {
+    width: 15vw;
+  }
+  .names {
+    padding: 18vh 36vw 0 0;
+  }
+  .text-container {
+    padding: 2vh 53vw 0 10vw;
+  }
+  .james {
+    font-size: 3.65rem;
+  }
+
+  .agave {
+    width: 250px;
+    left: 65vw;
+  }
+  .site-txt {
+    bottom: 150px;
+    left: 65vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .bg {
+    background-position: 65%;
+  }
+
+  .sun {
+    width: 10vh;
+  }
+
+  .names {
+    text-align: left;
+    line-height: 3rem;
+    padding: 0 45vw 0 0;
+    position: fixed;
+    top: 100px;
+    left: 10px;
+  }
+  .lauren, .james {
+    font-size: 2.5rem;
+  }
+  .text-container {
+    text-align: left;
+    padding: 26vh 53vw 0 3vw;
+  }
+  .getting-married {
+    line-height: 1.85rem;
+  }
+  .on {
+    margin: 1.25rem 0;
+  }
+
+  .agave {
+    width: 175px;
+    left: 50vw;
+    bottom: -30px;
+  } 
+  .site-txt {
+    font-size: 1.10rem;
+    text-shadow: 1px 1px rgb(247, 161, 3);
+    bottom: 90px;
+    left: 50vw;
+  }
+  .phone-br::before {
+    content: '\A';
+    white-space:pre;
+  }
+}
